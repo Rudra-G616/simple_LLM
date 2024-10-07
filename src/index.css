@@ -1,0 +1,126 @@
+/* Global styling */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #121212; /* Dark background */
+  color: #f1f1f1; /* Light text color */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full height for centering the input */
+}
+
+.app {
+  width: 100%;
+  max-width: 600px;
+  padding: 20px;
+  text-align: center;
+}
+
+p {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.input-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+input {
+  padding: 15px;
+  font-size: 18px;
+  border: 2px solid #333;
+  background-color: #1e1e1e;
+  color: #f1f1f1;
+  border-radius: 5px;
+  margin-right: 10px;
+  width: 70%; /* Large width for input */
+  transition: all 0.3s ease;
+}
+
+input:focus {
+  outline: none;
+  border-color: #00ffff; /* Aqua border on focus */
+}
+
+button {
+  padding: 10px 18px; /* Decreased button size */
+  font-size: 14px;
+  border: none;
+  border-radius: 5px;
+  background-color: #00ffff; /* Aqua background for buttons */
+  color: #121212; /* Dark text */
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #00cccc; /* Slightly darker aqua on hover */
+  transform: scale(1.05); /* Animation on hover */
+}
+
+button:active {
+  transform: scale(0.95); /* Shrink on click */
+}
+
+button:disabled {
+  background-color: #555;
+  cursor: not-allowed;
+}
+
+.search-result {
+  margin-top: 20px;
+  max-height: 300px;
+  overflow-y: auto; /* Allows scrolling if content is too long */
+  background-color: #1e1e1e;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.answer {
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #2e2e2e;
+  border-radius: 5px;
+  font-size: 16px;
+  text-align: left;
+  line-height: 1.5;
+}
+
+/* Surprise button specific styling */
+.surprise {
+  padding: 8px 14px; /* Smaller size for the Surprise Me! button */
+  font-size: 14px;
+  background-color: #00ffff; /* Aqua color */
+  color: #121212; /* Dark text */
+  margin-left: 20px; /* Add some gap to the left of the button */
+  transition: all 0.3s ease;
+}
+
+.surprise:hover {
+  background-color: #00cccc; /* Darker aqua on hover */
+  transform: scale(1.1); /* Animation on hover */
+}
+
+.surprise:active {
+  transform: scale(0.95); /* Shrink on click */
+}
+
+/* Loading message styling */
+p.loading {
+  color: #ff9800;
+}
+
+/* Error message styling */
+p.error {
+  color: #e53935;
+}
+
+
+
+
